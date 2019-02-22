@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+	<item
+		android:id="@+id/action_home"
+		android:checkable="true"
+		android:checked="true"
+		android:icon="@drawable/ic_home"
+		android:title="Home"
+		app:showAsAction="ifRoom" />
+	<item
+		android:id="@+id/action_search"
+		android:checkable="true"
+		android:icon="@drawable/ic_search"
+		android:title="Search"
+		app:showAsAction="ifRoom" />
+	<item
+		android:id="@+id/action_favourite"
+		android:checkable="true"
+		android:icon="@drawable/ic_heart"
+		android:title="Favourite"
+		app:showAsAction="ifRoom" />
+	<item
+		android:id="@+id/action_tickets"
+		android:checkable="true"
+		android:icon="@drawable/ic_ticket"
+		android:title="Tickets"
+		app:showAsAction="ifRoom" />
+	<item
+		android:id="@+id/action_context_menu"
+		android:checkable="true"
+		android:icon="@drawable/ic_context_menu"
+		android:title="Context Menu"
+		app:showAsAction="ifRoom" />
+</menu>

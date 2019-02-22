@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_marginTop="@dimen/margin_large"
+	android:orientation="vertical">
+
+	<androidx.appcompat.widget.AppCompatImageView
+		android:id="@+id/ivWhoToFollowImage"
+		android:layout_width="@dimen/margin_xxxxlarge"
+		android:layout_height="@dimen/margin_xxxxlarge"
+		android:layout_marginStart="@dimen/margin_medium_2"
+		android:scaleType="centerCrop"
+		android:src="@drawable/ic_z"/>
+
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/tvName"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toEndOf="@id/ivWhoToFollowImage"
+		android:text="Zaw Htet Naing"
+		android:layout_marginTop="@dimen/margin_small"
+		android:textColor="@android:color/black"
+		android:layout_marginStart="@dimen/margin_medium_2"/>
+
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/tvRank"
+		android:layout_below="@id/tvName"
+		android:layout_marginTop="@dimen/margin_medium"
+		android:layout_toEndOf="@id/ivWhoToFollowImage"
+		android:layout_marginStart="@dimen/margin_medium_2"
+		android:text="Organizer"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+
+	<com.google.android.material.button.MaterialButton
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentEnd="true"
+		android:text="Follow"
+		android:textColor="@android:color/black"
+		android:backgroundTint="@android:color/white"
+		app:cornerRadius="@dimen/margin_medium"
+		android:layout_marginEnd="@dimen/margin_medium_2"
+		android:padding="@dimen/margin_medium_3"
+		app:rippleColor="@android:color/darker_gray"
+		app:strokeColor="@android:color/darker_gray"
+		app:strokeWidth="2dp"/>
+
+</RelativeLayout>

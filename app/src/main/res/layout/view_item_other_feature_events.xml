@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="@dimen/margin_xlarge"
+	android:orientation="vertical">
+
+	<androidx.cardview.widget.CardView
+		android:id="@+id/cvOtherEventImage"
+		android:layout_width="@dimen/other_feature_events_image_size"
+		android:layout_height="@dimen/other_feature_events_image_size"
+		android:layout_marginStart="@dimen/margin_card_medium_2">
+
+		<androidx.appcompat.widget.AppCompatImageView
+			android:id="@+id/ivOtherEventImage"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:src="@drawable/talk_event"
+			android:scaleType="centerCrop" />
+
+	</androidx.cardview.widget.CardView>
+
+	<TextView
+		android:id="@+id/tvTitle"
+		android:layout_toEndOf="@id/cvOtherEventImage"
+		android:layout_marginStart="@dimen/margin_medium_2"
+		android:text="Carrier Path and IT Job Opportunities in Japan"
+		android:textColor="@android:color/black"
+		android:textSize="@dimen/text_regular_3x"
+		android:layout_width="wrap_content"
+		android:layout_alignTop="@id/cvOtherEventImage"
+		android:layout_height="wrap_content" />
+
+	<TextView
+		android:id="@+id/tvDate"
+		android:layout_below="@id/tvTitle"
+		android:layout_marginTop="@dimen/margin_medium"
+		android:layout_alignStart="@id/tvTitle"
+		android:text="Wed, Feb 27 - 10am"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+
+	<TextView
+		android:id="@+id/tvPlace"
+		android:layout_below="@id/tvDate"
+		android:layout_alignStart="@id/tvTitle"
+		android:text="Talent Nest Learning Center"
+		android:layout_marginTop="@dimen/margin_medium"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+
+	<androidx.appcompat.widget.AppCompatImageView
+		android:id="@+id/btnFavourite"
+		android:src="@drawable/ic_favorite_border_black_48dp"
+		android:layout_width="@dimen/margin_large"
+		android:layout_height="@dimen/margin_large"
+		android:layout_alignParentEnd="true"
+		android:layout_alignBottom="@id/tvPlace"
+		android:layout_marginEnd="@dimen/margin_medium_2"/>
+
+</RelativeLayout>

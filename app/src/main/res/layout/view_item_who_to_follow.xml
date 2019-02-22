@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/tvWhoToFollowLabel"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="@dimen/margin_medium_2"
+		android:layout_marginTop="@dimen/margin_xxlarge"
+		android:text="@string/who_to_follow_label"
+		android:textColor="@android:color/black"
+		android:textSize="@dimen/text_regular_3x"
+		android:textStyle="bold" />
+
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/rvPeopleToFollow"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/tvWhoToFollowLabel"
+		android:layout_marginTop="@dimen/margin_medium_2"/>
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginStart="@dimen/margin_medium_2"
+		android:layout_marginEnd="@dimen/margin_medium_2"
+		android:layout_below="@id/rvPeopleToFollow"
+		android:layout_marginTop="@dimen/margin_xxlarge"
+		android:background="@android:color/darker_gray"/>
+
+</RelativeLayout>

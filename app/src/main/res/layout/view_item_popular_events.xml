@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:focusableInTouchMode="true"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<androidx.appcompat.widget.AppCompatImageView
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/background_shade_height"
+		android:scaleType="fitXY"
+		android:src="@drawable/background_shade" />
+
+	<androidx.appcompat.widget.AppCompatImageView
+		android:id="@+id/btnNotification"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentEnd="true"
+		android:layout_marginTop="@dimen/margin_xlarge"
+		android:layout_marginEnd="@dimen/margin_medium_2"
+		android:src="@drawable/ic_notifications_none_white_32dp" />
+
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/tvWhatsGoodInLabel"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/btnNotification"
+		android:layout_marginTop="@dimen/margin_medium"
+		android:layout_marginStart="@dimen/margin_medium_3"
+		android:layout_toEndOf="@id/ivLogo"
+		android:text="@string/what_s_good_in_label"
+		android:textColor="@android:color/white"
+		android:textSize="@dimen/text_regular_2x" />
+
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/tvCityName"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/tvWhatsGoodInLabel"
+		android:layout_alignStart="@id/tvWhatsGoodInLabel"
+		android:layout_marginTop="@dimen/margin_medium_2"
+		android:text="Yangon"
+		android:textColor="@android:color/white"
+		android:textSize="@dimen/text_heading_1x"
+		android:textStyle="bold" />
+
+	<View
+		android:layout_width="wrap_content"
+		android:layout_height="2dp"
+		android:background = "@android:color/white"
+		android:layout_below="@id/tvCityName"
+		android:layout_alignStart="@id/tvCityName"
+		android:layout_marginTop="@dimen/margin_small"
+		android:layout_alignEnd="@id/tvCityName"
+		/>
+
+	<androidx.appcompat.widget.AppCompatImageView
+		android:id="@+id/ivLogo"
+		android:layout_width="@dimen/logo_size"
+		android:layout_height="@dimen/logo_size"
+		android:layout_marginStart="@dimen/margin_medium_2"
+		android:layout_marginTop="@dimen/margin_xxxxxlarge"
+		android:background="@drawable/background_circle_with_white_stroke"
+		android:padding="@dimen/margin_medium"
+		android:scaleType="centerCrop"
+		android:src="@drawable/sunset" />
+
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/tvPopularLabel"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/tvCityName"
+		android:layout_alignStart="@id/ivLogo"
+		android:layout_marginTop="@dimen/margin_large"
+		android:text="Popular In Yangon"
+		android:textColor="@android:color/white"
+		android:textSize="@dimen/text_regular_2x"
+		android:textStyle="bold" />
+
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/rvFeatureEvents"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/tvPopularLabel"
+		android:layout_marginTop="@dimen/margin_medium_3" />
+
+	<TextView
+		android:id="@+id/tvSeeMoreEvents"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/rvFeatureEvents"
+		android:text="See More Events Like This"
+		android:textStyle="bold"
+		android:textSize="@dimen/text_regular_2x"
+		android:textColor="@android:color/black"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="@dimen/margin_large" />
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginStart="@dimen/margin_medium_2"
+		android:layout_marginEnd="@dimen/margin_medium_2"
+		android:layout_below="@id/tvSeeMoreEvents"
+		android:layout_marginTop="@dimen/margin_xxlarge"
+		android:background="@android:color/darker_gray"/>
+
+
+</RelativeLayout>

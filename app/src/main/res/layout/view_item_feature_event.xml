@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<FrameLayout
+		android:id="@+id/rlFeatureEvent"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/feature_event_item_height"
+		android:layout_marginStart="@dimen/margin_medium_2"
+		android:layout_marginTop="@dimen/margin_medium_2"
+		android:layout_marginEnd="@dimen/margin_medium_2">
+
+		<androidx.cardview.widget.CardView
+			android:id="@+id/cvFeatureEvent"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/event_card_height"
+			app:cardCornerRadius="@dimen/margin_medium">
+
+			<androidx.appcompat.widget.AppCompatImageView
+				android:id="@+id/ivFeatureEvent"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/event_card_height"
+				android:scaleType="fitXY"
+				android:src="@drawable/talk_event_2" />
+
+		</androidx.cardview.widget.CardView>
+
+
+		<androidx.appcompat.widget.AppCompatImageView
+			android:id="@+id/btnFavourite"
+			style="@style/EventActionButton"
+			android:layout_gravity="bottom|end"
+			android:layout_marginEnd="@dimen/margin_medium_2"
+			android:src="@drawable/ic_favorite_border_black_48dp" />
+
+		<androidx.appcompat.widget.AppCompatImageView
+			android:id="@+id/btnShare"
+			style="@style/EventActionButton"
+			android:layout_gravity="bottom|end"
+			android:layout_marginEnd="@dimen/margin_xxxxxxlarge"
+			android:src="@drawable/ic_share_outline" />
+
+	</FrameLayout>
+
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/tvMonth"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/rlFeatureEvent"
+		android:layout_marginStart="@dimen/margin_medium_3"
+		android:layout_marginTop="@dimen/margin_medium_2"
+		android:text="FEB"
+		android:textColor="@android:color/holo_red_dark"
+		android:textSize="@dimen/text_regular_2x" />
+
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/tvDay"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/tvMonth"
+		android:layout_alignStart="@id/tvMonth"
+		android:layout_marginTop="@dimen/margin_small"
+		android:text="24"
+		android:textColor="@android:color/black"
+		android:textSize="@dimen/text_regular_3x" />
+
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/tvTitle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/rlFeatureEvent"
+		android:layout_marginTop="@dimen/margin_card_medium_2"
+		android:layout_marginStart="@dimen/margin_medium_2"
+		android:layout_toEndOf="@id/tvMonth"
+		android:text="Branding Real Life Lessons"
+		android:textColor="@android:color/black"
+		android:textSize="@dimen/text_regular_3x" />
+
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/tvPlace"
+		android:layout_width="100dp"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/tvTitle"
+		android:layout_toEndOf="@id/tvDay"
+		android:textSize="@dimen/text_regular"
+		android:layout_marginStart="@dimen/margin_medium_3"
+		android:layout_marginTop="@dimen/margin_card_medium_2"
+		android:text="Inspiro Institute" />
+
+	<androidx.appcompat.widget.AppCompatTextView
+		android:id="@+id/tvChannel"
+		android:layout_width="100dp"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/tvPlace"
+		android:textSize="@dimen/text_regular"
+		android:layout_alignStart="@id/tvPlace"
+		android:layout_marginTop="@dimen/margin_card_medium_2"
+		android:text="on Everbrite" />
+
+</RelativeLayout>
